@@ -21,8 +21,8 @@
 		DBFF7817256A738A009C3473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFF7806256A734E009C3473 /* LaunchScreen.storyboard */; };
 		DBFF7818256A738A009C3473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFF7804256A734E009C3473 /* Assets.xcassets */; };
 		DBFF7819256A738A009C3473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFF7801256A734C009C3473 /* Main.storyboard */; };
-		DBFF7826256A776B009C3473 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBFF7825256A776B009C3473 /* GoogleService-Info.plist */; };
-		DBFF782A256A7779009C3473 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBFF7829256A7779009C3473 /* GoogleService-Info.plist */; };
+		DBFF7853256A84E9009C3473 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBFF7825256A776B009C3473 /* GoogleService-Info-Debug.plist */; };
+		DBFF7856256A84EC009C3473 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBFF7829256A7779009C3473 /* GoogleService-Info-Release.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,8 @@
 		DBFF7807256A734E009C3473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBFF7809256A734E009C3473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBFF781D256A738A009C3473 /* DEVELOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEVELOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBFF7825256A776B009C3473 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DBFF7829256A7779009C3473 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBFF7825256A776B009C3473 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
+		DBFF7829256A7779009C3473 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
 		E6F0FAA67547E1F4805FA054 /* Pods_DEVELOP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DEVELOP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,8 +98,7 @@
 		DBFF77FA256A734C009C3473 /* sample-app */ = {
 			isa = PBXGroup;
 			children = (
-				DBFF7824256A769B009C3473 /* GoogleService-Info-DEVELOP */,
-				DBFF7823256A7678009C3473 /* GoogleService-Info-PRODUCT */,
+				DBFF7846256A8353009C3473 /* Configs */,
 				DBFF77FB256A734C009C3473 /* AppDelegate.swift */,
 				DBFF77FD256A734C009C3473 /* SceneDelegate.swift */,
 				DBFF77FF256A734C009C3473 /* ViewController.swift */,
@@ -111,20 +110,13 @@
 			path = "sample-app";
 			sourceTree = "<group>";
 		};
-		DBFF7823256A7678009C3473 /* GoogleService-Info-PRODUCT */ = {
+		DBFF7846256A8353009C3473 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				DBFF7829256A7779009C3473 /* GoogleService-Info.plist */,
+				DBFF7829256A7779009C3473 /* GoogleService-Info-Release.plist */,
+				DBFF7825256A776B009C3473 /* GoogleService-Info-Debug.plist */,
 			);
-			path = "GoogleService-Info-PRODUCT";
-			sourceTree = "<group>";
-		};
-		DBFF7824256A769B009C3473 /* GoogleService-Info-DEVELOP */ = {
-			isa = PBXGroup;
-			children = (
-				DBFF7825256A776B009C3473 /* GoogleService-Info.plist */,
-			);
-			path = "GoogleService-Info-DEVELOP";
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		DEAB35A53B6A781733FBDE6B /* Frameworks */ = {
@@ -148,6 +140,7 @@
 				DBFF77F5256A734C009C3473 /* Frameworks */,
 				DBFF77F6256A734C009C3473 /* Resources */,
 				B616E145DF0D3C46765BC9DD /* [CP] Embed Pods Frameworks */,
+				DBFF7861256A88BC009C3473 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -167,6 +160,7 @@
 				DBFF7815256A738A009C3473 /* Frameworks */,
 				DBFF7816256A738A009C3473 /* Resources */,
 				3D8A535F4D02C8C8D880DB64 /* [CP] Embed Pods Frameworks */,
+				DBFF7850256A8428009C3473 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -215,10 +209,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFF7856256A84EC009C3473 /* GoogleService-Info-Release.plist in Resources */,
 				DBFF7808256A734E009C3473 /* LaunchScreen.storyboard in Resources */,
-				DBFF782A256A7779009C3473 /* GoogleService-Info.plist in Resources */,
 				DBFF7805256A734E009C3473 /* Assets.xcassets in Resources */,
 				DBFF7803256A734C009C3473 /* Main.storyboard in Resources */,
+				DBFF7853256A84E9009C3473 /* GoogleService-Info-Debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFF7817256A738A009C3473 /* LaunchScreen.storyboard in Resources */,
-				DBFF7826256A776B009C3473 /* GoogleService-Info.plist in Resources */,
 				DBFF7818256A738A009C3473 /* Assets.xcassets in Resources */,
 				DBFF7819256A738A009C3473 /* Main.storyboard in Resources */,
 			);
@@ -313,6 +307,40 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PRODUCT/Pods-PRODUCT-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DBFF7850256A8428009C3473 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Release\" ]; then\n  cp \"${PROJECT_DIR}/${PROJECT_NAME}/Configs/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse\n  cp \"${PROJECT_DIR}/${PROJECT_NAME}/Configs/GoogleService-Info-Debug.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+		};
+		DBFF7861256A88BC009C3473 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Release\" ]; then\n  cp \"${PROJECT_DIR}/${PROJECT_NAME}/Configs/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse\n  cp \"${PROJECT_DIR}/${PROJECT_NAME}/Configs/GoogleService-Info-Debug.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -482,6 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "sample-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -502,6 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "sample-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -9,17 +9,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signup(_ sender: Any) {
-        #if PRODUCT
-        Auth.auth().createUser(withEmail: "prod@gmail.com", password: "555555", completion: { (user,error) in
+        Auth.auth().createUser(withEmail: "test@gmail.com", password: "555555", completion: { (user,error) in
             print("作成成功")
         })
-        #elseif DEVELOP
-        Auth.auth().createUser(withEmail: "dev@gmail.com", password: "555555", completion: { (user,error) in
-            print("作成成功")
-        })
-        #else
-        print("失敗")
-        #endif
     }
     
 }
